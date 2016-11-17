@@ -5,7 +5,7 @@
  * @link http://adminlte.yiister.ru
  */
 
-namespace yiister\adminlte\widgets\grid;
+namespace zabachok\adminlte\widgets\grid;
 
 use yii\helpers\Html;
 

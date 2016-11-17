@@ -5,11 +5,11 @@
  * @link http://adminlte.yiister.ru
  */
 
-namespace yiister\adminlte\assets;
+namespace zabachok\adminlte\assets;
 
 class Asset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+    public $sourcePath = '@vendor/zabachok/adminlte/dist';
     public $css = [
         'css/AdminLTE.min.css',
         'css/skins/_all-skins.min.css',

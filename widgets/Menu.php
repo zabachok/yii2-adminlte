@@ -5,9 +5,8 @@
  * @link http://adminlte.yiister.ru
  */
 
-namespace yiister\adminlte\widgets;
+namespace zabachok\adminlte\widgets;
 
-use rmrevin\yii\fontawesome\component\Icon;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
@@ -58,7 +57,8 @@ class Menu extends \yii\widgets\Menu
             $renderedItem,
             [
                 '{icon}' => isset($item['icon'])
-                    ? new Icon($item['icon'], ArrayHelper::getValue($item, 'iconOptions', []))
+//                    ? new Icon($item['icon'], ArrayHelper::getValue($item, 'iconOptions', []))
+                    ? Html::tag('i', '', array_merge(['class'=>'fa fa-' . $item['icon']], ArrayHelper::getValue($item, 'iconOptions', [])))
                     : '',
                 '{badge}' => (
                     isset($item['badge'])
@@ -66,7 +66,7 @@ class Menu extends \yii\widgets\Menu
                         : ''
                     ) . (
                     isset($item['items']) && count($item['items']) > 0
-                        ? new Icon('fa fa-angle-left pull-right')
+                        ? '<i class="fa fa-angle-left pull-right" aria-hidden="true"></i>'
                         : ''
                     ),
             ]

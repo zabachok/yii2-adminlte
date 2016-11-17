@@ -5,9 +5,8 @@
  * @link http://adminlte.yiister.ru
  */
 
-namespace yiister\adminlte\widgets;
+namespace zabachok\adminlte\widgets;
 
-use rmrevin\yii\fontawesome\component\Icon;
 use yii\bootstrap\Widget;
 use yii\helpers\Html;
 
@@ -62,21 +61,24 @@ class Box extends Widget
 
     protected function initTools()
     {
-        if ($this->expandable || $this->collapsable) {
+        if ($this->expandable || $this->collapsable)
+        {
             $this->tools .= Html::button(
-                new Icon($this->expandable ? 'plus' : 'minus'),
+                $this->expandable ? '<i class="fa fa-plus" aria-hidden="true"></i>' : '<i class="fa fa-minus" aria-hidden="true"></i>',
                 [
                     'class' => 'btn btn-box-tool',
                     'data-widget' => 'collapse',
                 ]
             );
-            if ($this->expandable) {
+            if ($this->expandable)
+            {
                 Html::addCssClass($this->options, 'collapsed-box');
             }
         }
-        if ($this->removable) {
+        if ($this->removable)
+        {
             $this->tools .= Html::button(
-                new Icon('times'),
+                '<i class="fa fa-times" aria-hidden="true"></i>',
                 [
                     'class' => 'btn btn-box-tool',
                     'data-widget' => 'remove',
@@ -93,18 +95,21 @@ class Box extends Widget
         parent::init();
         $this->initTools();
         Html::addCssClass($this->options, 'box box-' . $this->type);
-        if ($this->filled) {
+        if ($this->filled)
+        {
             Html::addCssClass($this->options, 'box-solid');
         }
         echo Html::beginTag('div', $this->options);
-        if (isset($this->header)) {
+        if (isset($this->header))
+        {
             echo Html::beginTag('div', ['class' => 'box-header']);
             echo Html::tag(
                 'h3',
-                (isset($this->icon) ? new Icon($this->icon) . '&nbsp;' : '') . $this->header,
+                (isset($this->icon) ? '<i class="fa fa-' . $this->icon . '" aria-hidden="true"></i>' . '&nbsp;' : '') . $this->header,
                 ['class' => 'box-title']
             );
-            if (!empty($this->tools)) {
+            if (!empty($this->tools))
+            {
                 echo Html::tag('div', $this->tools, ['class' => 'box-tools pull-right']);
             }
             echo Html::endTag('div');

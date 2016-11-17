@@ -5,9 +5,8 @@
  * @link http://adminlte.yiister.ru
  */
 
-namespace yiister\adminlte\widgets;
+namespace zabachok\adminlte\widgets;
 
-use rmrevin\yii\fontawesome\component\Icon;
 use Yii;
 use yii\base\Widget;
 use yii\bootstrap\Alert;
@@ -66,7 +65,7 @@ class FlashAlert extends Widget
                 if ($this->showHeader) {
                     $header = Html::tag(
                         'h4',
-                        (isset($alert['icon']) ? new Icon($alert['icon']) . '&nbsp;' : '') . $alert['header']
+                        (isset($alert['icon']) ? '<i class="fa fa-' . $alert['icon'] . '" aria-hidden="true"></i>' . '&nbsp;' : '') . $alert['header']
                     );
                 }
                 echo Alert::widget(

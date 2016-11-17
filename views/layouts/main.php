@@ -6,7 +6,7 @@
 
 use yii\helpers\Html;
 
-yiister\adminlte\assets\Asset::register($this);
+zabachok\adminlte\assets\Asset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
@@ -246,7 +246,7 @@ desired effect
 
             <!-- Sidebar Menu -->
             <?=
-            \yiister\adminlte\widgets\Menu::widget(
+            \zabachok\adminlte\widgets\Menu::widget(
                 [
                     "items" => [
                         ["label" => "Home", "url" => "/", "icon" => "home"],
@@ -280,7 +280,7 @@ desired effect
                                     "icon" => "table",
                                     "badge" => "123",
                                     "badgeOptions" => [
-                                        "class" => \yiister\adminlte\components\AdminLTE::BG_BLUE,
+                                        "class" => \zabachok\adminlte\components\AdminLTE::BG_BLUE,
                                     ],
                                 ],
                             ],
@@ -333,7 +333,7 @@ desired effect
                     [
                         'encodeLabels' => false,
                         'homeLink' => [
-                            'label' => new \rmrevin\yii\fontawesome\component\Icon('home') . ' Home',
+                            'label' => '<i class="fa fa-home" aria-hidden="true"></i> Home',
                             'url' => '/',
                         ],
                         'links' => $this->params['breadcrumbs'],
@@ -356,7 +356,7 @@ desired effect
             Anything you want
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; <a href="http://yiister.ru">Yiister</a> <?= date("Y") ?>
+        <strong>Copyright &copy; <a href="http://yiister.ru">Yiister</a> and <a href="https://zabachok.net">zabachok.net</a> <?= date("Y") ?>
     </footer>
 
     <!-- Control Sidebar -->

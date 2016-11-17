@@ -1,5 +1,5 @@
 {
-  "name": "yiister/yii2-adminlte",
+  "name": "zabachok/yii2-adminlte",
   "description": "yii2-adminlte is a package for yii framework 2 that consists a very popular backend template AdminLTE (based on bootstrap 3).",
   "keywords": [
     "yii2",
@@ -20,6 +20,12 @@
       "email": "fps.06@mail.ru",
       "homepage": "https://github.com/fps01",
       "role": "Creator"
+    },
+    {
+      "name": "Daniil Romanov",
+      "email": "zabachok@zabachok.net",
+      "homepage": "https://zabachok.net",
+      "role": "Follower"
     }
   ],
   "support": {
@@ -30,8 +36,8 @@
     "php": ">=5.4.0",
     "yiisoft/yii2": ">=2.0.5",
     "yiisoft/yii2-bootstrap": "*",
-    "rmrevin/yii2-fontawesome": "2.12.*",
-    "almasaeed2010/adminlte": "~2.0"
+    "sersid/yii2-font-awesome-asset": "*",
+    "almasaeed2010/adminlte": "*"
   },
   "autoload": {
     "psr-4": {

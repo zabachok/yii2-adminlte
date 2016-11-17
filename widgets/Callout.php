@@ -5,7 +5,7 @@
  * @link http://adminlte.yiister.ru
  */
 
-namespace yiister\adminlte\widgets;
+namespace zabachok\adminlte\widgets;
 
 use yii\base\Widget;
 use yii\helpers\Html;
