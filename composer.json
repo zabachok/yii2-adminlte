@@ -29,8 +29,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/yiister/yii2-adminlte/issues",
-    "source": "https://github.com/yiister/yii2-adminlte"
+    "issues": "https://github.com/zabachok/yii2-adminlte/issues",
+    "source": "https://github.com/zabachok/yii2-adminlte"
   },
   "require": {
     "php": ">=5.4.0",
@@ -41,7 +41,7 @@
   },
   "autoload": {
     "psr-4": {
-      "yiister\\adminlte\\": ""
+      "zabachok\\adminlte\\": ""
     }
   }
 }
