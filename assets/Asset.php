@@ -9,17 +9,20 @@ namespace zabachok\adminlte\assets;
 
 class Asset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@vendor/zabachok/adminlte/dist';
+    public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+
     public $css = [
         'css/AdminLTE.min.css',
         'css/skins/_all-skins.min.css',
     ];
+
     public $js = [
         'js/app.min.js'
     ];
+
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapPluginAsset',
-        'rmrevin\yii\fontawesome\AssetBundle',
+        'sersid\fontawesome\Asset',
     ];
 }
